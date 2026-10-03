@@ -1,1142 +1,1127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#05070b" />
-    <meta name="description"
-        content="Join Rishabh Dwivedi's FREE Live Market Masterclass. Learn a structured approach to market analysis, entries, risk management and positions psychology." />
-    <title>Rishabh Dwivedi | Free Live Market Masterclass</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1030847976227969');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1030847976227969&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <title>Digital Growth Agency | Meta Ads | Google Ads</title>
+
+    <meta name="description"
+        content="Grow your business with Meta Ads, Google Ads, Website Development, Social Media Management and high-quality lead generation.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <style>
-        :root {
-            --bg: #05070b;
-            --bg2: #090d14;
-            --card: #0d121b;
-            --card2: #111824;
-            --text: #f6f7fb;
-            --muted: #9da7b6;
-            --line: rgba(255, 255, 255, .10);
-            --accent: #05d325;
-            --accent2: #b9e900;
-            --green: #25d366;
-            --danger: #ff6b6b;
-            --max: 1180px;
-            --radius: 24px;
-            --shadow: 0 25px 80px rgba(0, 0, 0, .45);
-        }
-
         * {
-            box-sizing: border-box;
             margin: 0;
-            padding: 0
+            padding: 0;
+            box-sizing: border-box;
         }
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 90px
         }
 
         body {
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background:
-                radial-gradient(circle at 75% 5%, rgba(215, 255, 63, .10), transparent 28%),
-                radial-gradient(circle at 15% 35%, rgba(41, 109, 255, .08), transparent 25%),
-                var(--bg);
-            color: var(--text);
-            line-height: 1.5;
+            font-family: "Inter", sans-serif;
+            background: #050816;
+            color: #fff;
             overflow-x: hidden;
         }
 
         a {
             text-decoration: none;
-            color: inherit
+            color: inherit;
         }
 
-        img {
-            max-width: 100%;
-            display: block;
-            image-rendering: auto;
-            height: 520px;
-            object-fit: cover;
+        /* ================= BACKGROUND ================= */
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #6c3cff;
+            filter: blur(180px);
+            opacity: .20;
+            top: -180px;
+            left: -150px;
+            z-index: -1;
         }
 
-        button,
-        input {
-            font: inherit
+        body::after {
+            content: "";
+            position: fixed;
+            width: 450px;
+            height: 450px;
+            background: #00c6ff;
+            filter: blur(180px);
+            opacity: .15;
+            right: -150px;
+            bottom: -100px;
+            z-index: -1;
         }
 
         .container {
-            width: min(var(--max), 92%);
-            margin: auto
+            width: min(1180px, 92%);
+            margin: auto;
         }
 
-        .announcement {
-            background: var(--accent);
-            color: #0a0c0f;
-            text-align: center;
-            padding: 9px 15px;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: .3px;
-        }
+        /* ================= HEADER ================= */
 
-        nav {
-            position: sticky;
+        header {
+            position: absolute;
             top: 0;
-            z-index: 50;
-            background: rgba(5, 7, 11, .78);
-            backdrop-filter: blur(18px);
-            border-bottom: 1px solid var(--line);
+            left: 0;
+            width: 100%;
+            padding: 25px 0;
+            z-index: 10;
         }
 
-        .nav-inner {
-            height: 72px;
+        .nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 11px;
+        .logo {
+            font-size: 24px;
             font-weight: 900;
-            letter-spacing: -.5px;
+            letter-spacing: -1px;
         }
 
-        .brand-mark {
-            width: 36px;
-            height: 36px;
-            border-radius: 11px;
-            display: grid;
-            place-items: center;
-            background: var(--accent);
-            color: #090b0e;
-            font-weight: 1000;
+        .logo span {
+            color: #7c5cff;
         }
 
-        .brand span:last-child {
-            font-size: 17px
-        }
-
-        .nav-cta {
-            padding: 11px 18px;
-            border-radius: 999px;
-            background: var(--accent);
-            color: #090b0e;
-            font-size: 13px;
-            font-weight: 900;
-        }
-
-        .hero {
-            padding: 76px 0 60px;
-            min-height: 680px;
-            display: grid;
-            grid-template-columns: 1.05fr .95fr;
-            gap: 55px;
-            align-items: center;
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 13px;
-            border: 1px solid rgba(215, 255, 63, .35);
-            background: rgba(215, 255, 63, .07);
-            border-radius: 999px;
-            color: var(--accent);
-            font-size: 12px;
-            font-weight: 900;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 22px;
-        }
-
-        .dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: var(--accent);
-            box-shadow: 0 0 15px var(--accent);
-        }
-
-       h1 {
-	font-size: clamp(42px,6vw,51px);
-	line-height: 60px;
-	letter-spacing: -4px;
-	max-width: 750px;
-	margin-bottom: 24px;
-}
-
-        h1 em {
-            color: var(--accent);
-            font-style: normal;
-        }
-
-        .hero-copy {
-            font-size: 18px;
-            color: #b8c0cc;
-            max-width: 650px;
-            margin-bottom: 26px;
-        }
-
-        .meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 9px;
-            margin: 22px 0 28px;
-        }
-
-        .pill {
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, .035);
-            border-radius: 999px;
-            padding: 9px 13px;
-            font-size: 12px;
-            color: #d9dee7;
+        .nav-btn {
+            padding: 11px 20px;
+            border: 1px solid rgba(255,255,255,.15);
+            background: rgba(255,255,255,.06);
+            backdrop-filter: blur(15px);
+            border-radius: 50px;
+            font-size: 14px;
             font-weight: 700;
         }
 
-        .hero-actions {
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
             display: flex;
-            gap: 12px;
-            flex-wrap: wrap
-        }
-
-        .primary {
-            border: 0;
-            cursor: pointer;
-            background: var(--accent);
-            color: #080a0d;
-            font-weight: 950;
-            padding: 16px 23px;
-            border-radius: 14px;
-            box-shadow: 0 15px 35px rgba(215, 255, 63, .15);
-            transition: .2s;
-        }
-
-        .primary:hover {
-            transform: translateY(-2px);
-            background: #e2ff6a
-        }
-
-        .secondary {
-            padding: 16px 22px;
-            border: 1px solid var(--line);
-            border-radius: 14px;
-            color: #e6eaf0;
-            font-weight: 800;
-            background: rgba(255, 255, 255, .03);
-        }
-
-        .micro {
-            margin-top: 13px;
-            color: #7f8998;
-            font-size: 12px;
-        }
-
-        .mentor-visual {
-            min-height: 520px;
-            position: relative;
-            display: grid;
-            place-items: end center;
-        }
-
-        .portrait {
-            width: min(410px, 92%);
-            height: 520px;
-            border-radius: 34px;
-            background:
-                linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .015)),
-                radial-gradient(circle at 50% 20%, rgba(215, 255, 63, .16), transparent 35%),
-                #111720;
-            border: 1px solid var(--line);
-            overflow: hidden;
-            box-shadow: var(--shadow);
+            align-items: center;
+            padding: 120px 0 80px;
             position: relative;
         }
 
-        .portrait::before {
-            content: "RISHABH";
-            position: absolute;
-            right: -30px;
-            top: 80px;
-            font-size: 80px;
-            font-weight: 1000;
-            color: rgba(255, 255, 255, .025);
-            transform: rotate(90deg);
-            letter-spacing: 8px;
-        }
-
-        .portrait-placeholder {
-            height: 100%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            padding: 0 25px 30px;
-            text-align: center;
-            color: #687385;
-            font-weight: 800;
-            font-size: 14px;
-        }
-
-        .portrait-placeholder strong {
-            display: block;
-            color: #fff;
-            font-size: 28px;
-            margin-bottom: 5px;
-        }
-
-        .floating {
-            position: absolute;
-            background: rgba(13, 18, 27, .93);
-            border: 1px solid var(--line);
-            backdrop-filter: blur(15px);
-            padding: 15px 17px;
-            border-radius: 17px;
-            box-shadow: var(--shadow);
-        }
-
-        .float1 {
-            left: 0;
-            top: 75px
-        }
-
-        .float2 {
-            right: 0;
-            bottom: 70px
-        }
-
-        .floating b {
-            display: block;
-            font-size: 20px;
-            color: var(--accent)
-        }
-
-        .floating span {
-            font-size: 11px;
-            color: var(--muted);
-            font-weight: 700
-        }
-
-        section {
-            padding: 55px 0
-        }
-
-        .section-head {
-            text-align: center;
-            max-width: 760px;
-            margin: 0 auto 28px
-        }
-
-        .section-head .eyebrow {
-            margin-bottom: 9px
-        }
-
-        h2 {
-            font-size: clamp(32px, 4.2vw, 54px);
-            line-height: 1.02;
-            letter-spacing: -2.5px;
-            margin-bottom: 15px;
-        }
-
-        .section-head p {
-            color: var(--muted);
-            font-size: 16px
-        }
-
-        .problem-grid,
-        .learn-grid,
-        .audience-grid {
+        .hero-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-        }
-
-        .card {
-            padding: 25px;
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            background: linear-gradient(145deg, rgba(255, 255, 255, .045), rgba(255, 255, 255, .018));
-        }
-
-        .card-icon {
-            width: 43px;
-            height: 43px;
-            border-radius: 13px;
-            display: grid;
-            place-items: center;
-            background: rgba(215, 255, 63, .10);
-            color: var(--accent);
-            font-weight: 1000;
-            margin-bottom: 11px;
-        }
-
-        .card h3 {
-            font-size: 17px;
-            margin-bottom: 3px
-        }
-
-        .card p {
-            color: var(--muted);
-            font-size: 13px;
-            line-height: 1.35
-        }
-
-        .learn-grid {
-            grid-template-columns: repeat(2, 1fr)
-        }
-
-        .learn-card {
-            display: flex;
-            gap: 12px
-        }
-
-        .num {
-            min-width: 42px;
-            height: 42px;
-            border-radius: 12px;
-            display: grid;
-            place-items: center;
-            background: var(--accent);
-            color: #080a0d;
-            font-weight: 1000;
-        }
-
-        .demo {
-            background: linear-gradient(180deg, rgba(255, 255, 255, .02), transparent);
-        }
-
-        .demo-box {
-            border: 1px solid var(--line);
-            border-radius: 30px;
-            overflow: hidden;
-            background: #080b10;
-            box-shadow: var(--shadow);
-        }
-
-        .chart-placeholder {
-            min-height: 410px;
-            display: grid;
-            place-items: center;
-            padding: 35px;
-            background:
-                linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px),
-                #080b10;
-            background-size: 42px 42px;
-            text-align: center;
-        }
-
-        .chart-placeholder .chart-content {
-            width: min(680px, 90%);
-            padding: 45px;
-            border: 1px dashed rgba(255, 255, 255, .16);
-            border-radius: 22px;
-            background: rgba(5, 7, 11, .65);
-        }
-
-        .chart-content strong {
-            font-size: 24px
-        }
-
-        .chart-content p {
-            color: var(--muted);
-            margin-top: 8px;
-            font-size: 14px
-        }
-
-        .demo-bottom {
-            padding: 22px 25px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            border-top: 1px solid var(--line);
-        }
-
-        .demo-bottom div {
-            font-size: 13px;
-            color: #c6ccd6
-        }
-
-        .demo-bottom b {
-            display: block;
-            color: #fff;
-            margin-bottom: 4px
-        }
-
-        .mentor {
-            display: grid;
-            grid-template-columns: .8fr 1.2fr;
-            gap: 55px;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 70px;
             align-items: center;
         }
 
-        .mentor-card {
-            min-height: 450px;
-            border-radius: 30px;
-            border: 1px solid var(--line);
-            background:
-                radial-gradient(circle at 50% 10%, rgba(215, 255, 63, .10), transparent 35%),
-                #0c1119;
-            display: grid;
-            place-items: end center;
-            overflow: hidden;
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 15px;
+            background: rgba(124,92,255,.12);
+            border: 1px solid rgba(124,92,255,.35);
+            border-radius: 50px;
+            color: #bdb1ff;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 25px;
         }
 
-        .mentor-placeholder {
-            width: 100%;
-            padding: 40px;
-            text-align: center;
-            color: #6e7888;
+        .badge i {
+            width: 8px;
+            height: 8px;
+            background: #52f7a2;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #52f7a2;
         }
 
-        .mentor-placeholder strong {
-            display: block;
-            color: #fff;
-            font-size: 34px
+        .hero h1 {
+            font-size: clamp(45px, 6vw, 78px);
+            line-height: 1.02;
+            letter-spacing: -4px;
+            font-weight: 900;
+            margin-bottom: 25px;
         }
 
-        .mentor-copy h2 {
-            text-align: left
+        .gradient-text {
+            background: linear-gradient(90deg, #7c5cff, #00d4ff, #7c5cff);
+            background-size: 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 5s infinite linear;
         }
 
-        .mentor-copy>p {
-            color: var(--muted);
+        @keyframes gradientMove {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 200%;
+            }
+        }
+
+        .hero p {
+            color: #a8aec3;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 620px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn {
+            padding: 16px 27px;
+            border-radius: 13px;
+            background: linear-gradient(135deg, #7c5cff, #4e35d9);
+            font-weight: 800;
+            box-shadow:
+                0 15px 40px rgba(124,92,255,.35),
+                inset 0 1px rgba(255,255,255,.3);
+            transition: .3s;
+        }
+
+        .primary-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(124,92,255,.5);
+        }
+
+        .secondary-btn {
+            padding: 16px 27px;
+            border-radius: 13px;
+            border: 1px solid rgba(255,255,255,.15);
+            background: rgba(255,255,255,.05);
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .secondary-btn:hover {
+            background: rgba(255,255,255,.1);
+            transform: translateY(-3px);
+        }
+
+        /* ================= 3D VISUAL ================= */
+
+        .hero-visual {
+            perspective: 1200px;
+        }
+
+        .dashboard {
+            position: relative;
+            padding: 25px;
+            border-radius: 28px;
+            background: linear-gradient(
+                145deg,
+                rgba(255,255,255,.13),
+                rgba(255,255,255,.035)
+            );
+            border: 1px solid rgba(255,255,255,.15);
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 40px 100px rgba(0,0,0,.5),
+                inset 0 1px rgba(255,255,255,.2);
+            transform: rotateY(-8deg) rotateX(5deg);
+            animation: floating 5s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%,100% {
+                transform: rotateY(-8deg) rotateX(5deg) translateY(0);
+            }
+
+            50% {
+                transform: rotateY(-8deg) rotateX(5deg) translateY(-15px);
+            }
+        }
+
+        .dashboard-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .dashboard-title {
             font-size: 14px;
-            margin-bottom: 16px;
-            line-height: 1.45
+            color: #aeb4ca;
         }
+
+        .live {
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 20px;
+            background: rgba(82,247,162,.1);
+            color: #52f7a2;
+        }
+
+        .revenue {
+            padding: 22px;
+            border-radius: 20px;
+            background: rgba(0,0,0,.18);
+            margin-bottom: 15px;
+        }
+
+        .revenue small {
+            color: #9da4ba;
+        }
+
+        .revenue h3 {
+            font-size: 38px;
+            margin-top: 7px;
+        }
+
+        .growth {
+            color: #52f7a2;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .chart {
+            height: 130px;
+            display: flex;
+            align-items: end;
+            gap: 8px;
+            padding: 15px;
+            background: rgba(0,0,0,.15);
+            border-radius: 18px;
+        }
+
+        .bar {
+            flex: 1;
+            border-radius: 8px 8px 2px 2px;
+            background: linear-gradient(to top, #4e35d9, #00d4ff);
+            box-shadow: 0 0 20px rgba(0,212,255,.15);
+        }
+
+        .bar:nth-child(1) { height: 25%; }
+        .bar:nth-child(2) { height: 40%; }
+        .bar:nth-child(3) { height: 32%; }
+        .bar:nth-child(4) { height: 55%; }
+        .bar:nth-child(5) { height: 48%; }
+        .bar:nth-child(6) { height: 72%; }
+        .bar:nth-child(7) { height: 65%; }
+        .bar:nth-child(8) { height: 90%; }
+
+        .mini-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .mini {
+            padding: 16px;
+            border-radius: 16px;
+            background: rgba(255,255,255,.05);
+        }
+
+        .mini span {
+            color: #9098af;
+            font-size: 12px;
+        }
+
+        .mini strong {
+            display: block;
+            font-size: 21px;
+            margin-top: 6px;
+        }
+
+        /* ================= STATS ================= */
 
         .stats {
+            padding: 0 0 90px;
+        }
+
+        .stats-box {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
         }
 
         .stat {
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, .025);
-            padding: 18px;
-            border-radius: 17px;
-        }
-
-        .stat b {
-            display: block;
-            font-size: 25px;
-            color: var(--accent)
-        }
-
-        .stat span {
-            font-size: 12px;
-            color: var(--muted)
-        }
-
-        .quote {
+            padding: 28px;
             text-align: center;
-            max-width: 850px;
-            margin: auto;
-            padding: 45px;
-            border: 1px solid var(--line);
-            border-radius: 30px;
-            background: linear-gradient(145deg, rgba(215, 255, 63, .07), rgba(255, 255, 255, .02));
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 20px;
+            background: rgba(255,255,255,.04);
         }
 
-        .quote p {
-            font-size: clamp(24px, 3.5vw, 40px);
-            font-weight: 900;
-            letter-spacing: -1.5px;
-            line-height: 1.12;
+        .stat h2 {
+            font-size: 34px;
+            margin-bottom: 5px;
         }
 
-        .quote p span {
-            color: var(--accent)
+        .stat p {
+            color: #8e96ad;
+            font-size: 13px;
         }
 
-        .cta-section {
-            padding: 95px 0;
-            background:
-                radial-gradient(circle at 50% 30%, rgba(215, 255, 63, .12), transparent 32%),
-                #080b10;
-            border-top: 1px solid var(--line);
-            border-bottom: 1px solid var(--line);
+        /* ================= SERVICES ================= */
+
+        section {
+            padding: 100px 0;
         }
+
+        .section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: auto auto 55px;
+        }
+
+        .section-heading span {
+            color: #8f7cff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(35px,5vw,55px);
+            line-height: 1.1;
+            margin: 15px 0;
+            letter-spacing: -2px;
+        }
+
+        .section-heading p {
+            color: #9299ae;
+            line-height: 1.7;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 18px;
+        }
+
+        .service {
+            position: relative;
+            min-height: 260px;
+            padding: 27px;
+            border-radius: 22px;
+            border: 1px solid rgba(255,255,255,.1);
+            background: linear-gradient(
+                145deg,
+                rgba(255,255,255,.09),
+                rgba(255,255,255,.025)
+            );
+            transition: .35s;
+            overflow: hidden;
+        }
+
+        .service::before {
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background: #7c5cff;
+            filter: blur(80px);
+            opacity: .15;
+            top: -40px;
+            right: -40px;
+        }
+
+        .service:hover {
+            transform: translateY(-10px) rotateX(2deg);
+            border-color: rgba(124,92,255,.5);
+            box-shadow: 0 25px 50px rgba(0,0,0,.3);
+        }
+
+        .service-icon {
+            width: 55px;
+            height: 55px;
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+            border-radius: 15px;
+            background: linear-gradient(135deg,#7c5cff,#3824b7);
+            box-shadow: 0 12px 30px rgba(124,92,255,.25);
+            margin-bottom: 25px;
+        }
+
+        .service h3 {
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .service p {
+            color: #8f97ad;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* ================= WHY US ================= */
+
+        .why {
+            background: rgba(255,255,255,.015);
+            border-top: 1px solid rgba(255,255,255,.05);
+            border-bottom: 1px solid rgba(255,255,255,.05);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .why h2 {
+            font-size: 48px;
+            letter-spacing: -2px;
+            margin: 15px 0 20px;
+        }
+
+        .why > .container > .why-grid p {
+            color: #9299ae;
+            line-height: 1.8;
+        }
+
+        .features {
+            margin-top: 30px;
+            display: grid;
+            gap: 15px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            padding: 16px;
+            border: 1px solid rgba(255,255,255,.08);
+            background: rgba(255,255,255,.035);
+            border-radius: 15px;
+        }
+
+        .check {
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            background: rgba(82,247,162,.12);
+            color: #52f7a2;
+        }
+
+        .feature strong {
+            font-size: 14px;
+        }
+
+        .feature small {
+            display: block;
+            color: #7f879d;
+            margin-top: 3px;
+        }
+
+        /* ================= CTA ================= */
 
         .cta-box {
+            position: relative;
+            overflow: hidden;
             text-align: center;
-            max-width: 780px;
-            margin: auto;
+            padding: 80px 30px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,.15);
+            background:
+                radial-gradient(circle at 50% 0%, rgba(124,92,255,.35), transparent 50%),
+                rgba(255,255,255,.045);
+            box-shadow: 0 30px 80px rgba(0,0,0,.35);
         }
 
         .cta-box h2 {
-            font-size: clamp(38px, 5vw, 40px)
+            font-size: clamp(35px,5vw,60px);
+            letter-spacing: -2px;
+            margin-bottom: 18px;
         }
 
         .cta-box p {
-            color: var(--muted);
-            margin: 0 auto 15px;
-            max-width: 590px;
-            line-height: 1.4
+            color: #969eb3;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
         }
 
-        \n\n footer {
-            padding: 35px 0 100px;
-            color: #687384;
-            font-size: 12px;
-        }
+        /* ================= FOOTER ================= */
 
-        footer .footer-inner {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            border-top: 1px solid var(--line);
-            padding-top: 25px;
-        }
-
-        /* Modal */
-        .modal {
-            position: fixed;
-            inset: 0;
-            z-index: 100;
-            display: none;
-            place-items: center;
-            padding: 18px;
-            background: rgba(0, 0, 0, .75);
-            backdrop-filter: blur(12px);
-        }
-
-        .modal.show {
-            display: grid
-        }
-
-        .modal-card {
-            width: min(470px, 100%);
-            background: #0b1018;
-            border: 1px solid var(--line);
-            border-radius: 27px;
-            padding: 29px;
-            box-shadow: 0 35px 100px rgba(0, 0, 0, .65);
-            position: relative;
-        }
-
-        .close {
-            position: absolute;
-            right: 16px;
-            top: 14px;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, .04);
-            color: #fff;
-            cursor: pointer;
-        }
-
-        .modal-card h3 {
-            font-size: 29px;
-            letter-spacing: -1px;
-            margin-bottom: 7px
-        }
-
-        .modal-card>p {
-            color: var(--muted);
-            font-size: 13px;
-            margin-bottom: 22px
-        }
-
-        .field {
-            margin-bottom: 13px
-        }
-
-        .field label {
-            display: block;
-            font-size: 12px;
-            color: #aab3c1;
-            font-weight: 800;
-            margin-bottom: 7px
-        }
-
-        .field input {
-            width: 100%;
-            background: #070a0f;
-            color: #fff;
-            border: 1px solid var(--line);
-            border-radius: 13px;
-            padding: 14px;
-            outline: none;
-        }
-
-        .field input:focus {
-            border-color: rgba(215, 255, 63, .6)
-        }
-
-        .error {
-            color: var(--danger);
-            font-size: 12px;
-            margin: 8px 0;
-            display: none
-        }
-
-        .privacy {
-            font-size: 10px;
-            color: #667180;
+        footer {
+            padding: 30px 0;
+            border-top: 1px solid rgba(255,255,255,.07);
             text-align: center;
-            margin-top: 10px
+            color: #737b91;
+            font-size: 13px;
         }
 
-        .whatsapp {
+        /* ================= TELEGRAM FLOAT ================= */
+
+        .telegram-float {
             position: fixed;
-            right: 18px;
-            bottom: 18px;
-            z-index: 45;
-            width: 54px;
-            height: 54px;
+            right: 22px;
+            bottom: 22px;
+            width: 58px;
+            height: 58px;
             border-radius: 50%;
             display: grid;
             place-items: center;
-            background: var(--green);
-            color: #fff;
-            box-shadow: 0 12px 35px rgba(37, 211, 102, .25);
             font-size: 25px;
-            font-weight: 900;
+            background: linear-gradient(135deg,#2aa9e8,#168dcc);
+            box-shadow: 0 10px 35px rgba(42,169,232,.4);
+            z-index: 99;
+            animation: pulse 2s infinite;
         }
 
-        @media(max-width:900px) {
-            .hero {
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(42,169,232,.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(42,169,232,0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(42,169,232,0);
+            }
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width: 950px) {
+
+            .hero-grid,
+            .why-grid {
                 grid-template-columns: 1fr;
-                padding-top: 55px
-            }
-
-            .mentor-visual {
-                min-height: 420px
-            }
-
-            .portrait {
-                height: 430px
-            }
-
-            .problem-grid,
-            .audience-grid {
-                grid-template-columns: 1fr 1fr
-            }
-
-            .mentor {
-                grid-template-columns: 1fr
-            }
-        }
-
-        @media(max-width:650px) {
-            .nav-cta {
-                padding: 9px 13px;
-                font-size: 11px
-            }
-
-            .brand span:last-child {
-                font-size: 15px
             }
 
             .hero {
-                padding: 45px 0 35px;
-                min-height: auto
+                padding-top: 150px;
             }
 
-            h1 {
-                letter-spacing: -2.7px
+            .hero-visual {
+                max-width: 650px;
+                margin: auto;
             }
 
-            .hero-copy {
-                font-size: 16px
+            .services-grid {
+                grid-template-columns: repeat(2,1fr);
             }
 
-            .hero-actions {
-                display: block
+            .why h2 {
+                font-size: 40px;
+            }
+        }
+
+        @media(max-width: 600px) {
+
+            .nav-btn {
+                padding: 9px 14px;
+                font-size: 12px;
             }
 
-            .primary,
-            .secondary {
+            .hero h1 {
+                font-size: 46px;
+                letter-spacing: -2.5px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .primary-btn,
+            .secondary-btn {
+                text-align: center;
                 width: 100%;
-                display: block;
-                text-align: center
             }
 
-            .secondary {
-                margin-top: 10px
+            .dashboard {
+                padding: 17px;
+                transform: none;
             }
 
-            .float1 {
-                left: -5px;
-                top: 40px
+            .dashboard h3 {
+                font-size: 30px;
             }
 
-            .float2 {
-                right: -5px;
-                bottom: 30px
+            .stats-box {
+                grid-template-columns: 1fr;
             }
 
-            .problem-grid,
-            .learn-grid,
-            .audience-grid {
-                grid-template-columns: 1fr
+            .services-grid {
+                grid-template-columns: 1fr;
             }
 
             section {
-                padding: 42px 0
+                padding: 70px 0;
             }
 
-            .demo-bottom {
-                grid-template-columns: 1fr
+            .section-heading h2 {
+                font-size: 37px;
             }
 
-            .stats {
-                grid-template-columns: 1fr 1fr
+            .why h2 {
+                font-size: 36px;
             }
 
-            .quote {
-                padding: 22px 18px
-            }
-
-            footer .footer-inner {
-                display: block
-            }
-
-            footer .footer-inner p+p {
-                margin-top: 8px
+            .cta-box {
+                padding: 60px 20px;
             }
         }
 
-        @media(max-width:650px) {
-            .modal {
-                align-items: flex-start;
-                overflow-y: auto;
-                padding: 12px;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            .modal-card {
-                width: 100%;
-                max-height: calc(100dvh - 24px);
-                overflow-y: auto;
-                padding: 24px 18px 20px;
-                margin: auto 0;
-                border-radius: 22px;
-            }
-
-            .modal-card h3 {
-                font-size: 26px;
-                padding-right: 35px
-            }
-
-            .modal-card>p {
-                font-size: 13px;
-                line-height: 1.4;
-                margin-bottom: 18px
-            }
-
-            .field {
-                margin-bottom: 12px
-            }
-
-            .field label {
-                font-size: 11px;
-                margin-bottom: 6px
-            }
-
-            .field input {
-                min-height: 52px;
-                font-size: 16px;
-                line-height: 1.2;
-                padding: 14px 13px;
-                -webkit-appearance: none;
-                appearance: none;
-            }
-
-            .modal-card .primary {
-                min-height: 52px;
-                font-size: 14px;
-                padding: 14px 16px;
-            }
-
-            .privacy {
-                font-size: 10px;
-                line-height: 1.35
-            }
-
-            .close {
-                width: 38px;
-                height: 38px;
-                right: 12px;
-                top: 11px;
-                font-size: 22px;
-            }
-        }
-
-
-        .primary.red {
-            padding: 12px 10px;
-        }
+        .logo img {
+	width: 69px;
+	border-radius: 100px;
+}
     </style>
 </head>
 
 <body>
-    <!-- =========================================================
-       RISHABH CONCEPT - EDIT THESE 3 VALUES BEFORE PUBLISHING
-       ========================================================= -->
-    <script>
-        const CONFIG = {
-            whatsappCommunityLink: "https://chat.whatsapp.com/FoDBijEzPuoGyBx8ZeCdkC",
-            masterclassTime: "12:00 PM"
-        };
-    </script>
 
-    <div class="announcement">🔴 FREE LIVE MARKET MASTERCLASS · SUNDAY · 12:00 PM</div>
+    <!-- HEADER -->
+    <header>
+        <div class="container nav">
 
-    <nav>
-        <div class="container nav-inner">
-            <a href="#" class="brand">
-                <span class="brand-mark">R</span>
-                <span>RISHABH CONCEPT</span>
+            <div class="logo">
+               <img src="logo.jpg" alt="">
+            </div>
+
+            <a href="https://t.me/+NHNQiIrUj6Y1NWE1" class="nav-btn">
+                Join Telegram →
             </a>
-            <a class="primary red" href="https://chat.whatsapp.com/HldcRtWfVVI1err1sb8XIm">JOIN FREE MASTERCLASS</a>
-        </div>
-    </nav>
 
-    <main>
-        <!-- HERO -->
-        <section class="container hero">
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="container hero-grid">
+
             <div>
-                <div class="eyebrow">Free Live Masterclass</div>
+
+                <div class="badge">
+                    <i></i>
+                    Digital Growth & Performance Marketing
+                </div>
 
                 <h1>
-                    Rishabh Concept <br><em>Tr@ding Community</em>
+                    Grow Your Business With Powerful Digital Marketing
                 </h1>
 
-                <p class="hero-copy">
-                    Join Rishabh Dwivedi for a FREE LIVE Market Masterclass and learn a simple, structured approach to
-                    understanding markets.
+                <p>
+                    We help businesses generate better leads and grow online
+                    through Meta Ads, Google Ads, high-converting websites
+                    and strategic social media marketing.
                 </p>
 
-                <div class="meta">
-                    <span class="pill">📅 SUNDAY</span>
-                    <span class="pill">⏰ 12:00 PM</span>
-                    <span class="pill">🎟️ 100% FREE</span>
-                    <span class="pill">🔴 LIVE</span>
+                <div class="hero-buttons">
+
+                    <a href="https://t.me/+NHNQiIrUj6Y1NWE1" class="primary-btn">
+                        🚀 Join Our Telegram
+                    </a>
+
+                    <a href="#services" class="secondary-btn">
+                        Explore Services
+                    </a>
+
                 </div>
 
-                <div class="hero-actions">
-
-                    <a class="primary" href="https://chat.whatsapp.com/HldcRtWfVVI1err1sb8XIm">GET FREE ACCESS →</a>
-                    <a class="secondary" href="https://chat.whatsapp.com/HldcRtWfVVI1err1sb8XIm">SEE WHAT YOU'LL
-                        LEARN</a>
-                </div>
-
-                <p class="micro">No payment required · Enter your details to get instant WhatsApp access</p>
             </div>
 
-            <div class="mentor-visual">
-                <div class="portrait">
-                    <img src="bgt.webp" alt="">
-                </div>
-            </div>
-            </div>
-        </section>
 
+            <!-- 3D DASHBOARD -->
 
-        <!-- LEARN -->
-        <section id="learn">
-            <div class="container">
-                <div class="section-head">
-                    <div class="eyebrow">Inside The Masterclass</div>
-                    <h2>What's Inside?</h2>
-                </div>
+            <div class="hero-visual">
 
-                <div class="learn-grid">
-                    <div class="card learn-card">
-                        <div class="num">✓</div>
-                        <div>
-                            <h3>Market Setup</h3>
-                            <p>Find better market opportunities.</p>
+                <div class="dashboard">
+
+                    <div class="dashboard-top">
+
+                        <div class="dashboard-title">
+                            Campaign Performance
                         </div>
-                    </div>
-                    <div class="card learn-card">
-                        <div class="num">✓</div>
-                        <div>
-                            <h3>Entry & Exit</h3>
-                            <p>Understand entry and exit decisions.</p>
+
+                        <div class="live">
+                            ● LIVE
                         </div>
+
                     </div>
-                    <div class="card learn-card">
-                        <div class="num">✓</div>
-                        <div>
-                            <h3>Risk Management</h3>
-                            <p>Plan your risk before market participation.</p>
+
+
+                    <div class="revenue">
+
+                        <small>Generated Leads</small>
+
+                        <h3>2,847</h3>
+
+                        <div class="growth">
+                            ↑ 38.6% this month
                         </div>
+
                     </div>
-                    <div class="card learn-card">
-                        <div class="num">✓</div>
-                        <div>
-                            <h3>Indicator Demo</h3>
-                            <p>See the market indicator on live charts.</p>
+
+
+                    <div class="chart">
+
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+
+                    </div>
+
+
+                    <div class="mini-cards">
+
+                        <div class="mini">
+                            <span>Conversion Rate</span>
+                            <strong>8.7%</strong>
                         </div>
+
+                        <div class="mini">
+                            <span>Campaign ROI</span>
+                            <strong>4.8x</strong>
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div style="text-align:center;margin-top:28px">
-                    <a class="primary" href="https://chat.whatsapp.com/HldcRtWfVVI1err1sb8XIm">GET FREE ACCESS →</a>
-                </div>
             </div>
-        </section>
+
+        </div>
+
+    </section>
 
 
-        <!-- POSITIONING -->
-        <section>
-            <div class="container">
-                <div class="quote">
-                    <p>market participation isn't about finding <span>more positions.</span><br>It's about finding
-                        <span>better positions.</span></p>
+    <!-- STATS -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stats-box">
+
+                <div class="stat">
+                    <h2>500+</h2>
+                    <p>Campaigns Managed</p>
                 </div>
+
+                <div class="stat">
+                    <h2>100K+</h2>
+                    <p>Leads Generated</p>
+                </div>
+
+                <div class="stat">
+                    <h2>24/7</h2>
+                    <p>Growth Focus</p>
+                </div>
+
             </div>
-        </section>
 
-        <!-- MENTOR -->
-        <section>
-            <div class="container mentor">
-                <div class="mentor-card">
-                    <img src="bgt.webp" alt="">
-                </div>
+        </div>
 
-                <div class="mentor-copy">
-                    <div class="eyebrow">Meet Your Mentor</div>
-                    <h2>Why Learn From This Masterclass?</h2>
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section id="services">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>Our Services</span>
+
+                <h2>
+                    Everything You Need
+                    To <span class="gradient-text">Grow Online.</span>
+                </h2>
+
+                <p>
+                    A complete digital marketing system designed to
+                    attract the right audience, generate leads and
+                    increase conversions.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <div class="service">
+
+                    <div class="service-icon">📈</div>
+
+                    <h3>Meta Ads</h3>
+
                     <p>
-                        Rishabh's approach is built around making market analysis simpler,
-                        more structured and easier to execute. The goal of this masterclass
-                        is not to make you blindly follow calls — it's to help you understand
-                        the reasoning behind a market setup.
+                        Performance-focused Facebook and Instagram
+                        campaigns designed to generate targeted
+                        enquiries and quality leads.
                     </p>
 
-                    <!-- Only publish verified numbers. Replace or remove these. -->
-                    <div class="stats">
-                        <div class="stat"><b>7+</b><span>Years of market participation Experience*</span></div>
-                        <div class="stat"><b>LIVE</b><span>Market Analysis & Examples</span></div>
-                        <div class="stat"><b>FREE</b><span>Masterclass Registration</span></div>
-                        <div class="stat"><b>100%</b><span>Educational Session</span></div>
-                    </div>
-
-                    <p style="font-size:10px;color:#626d7d;margin-top:12px">*Use only if this claim is accurate and
-                        verified.</p>
                 </div>
+
+
+                <div class="service">
+
+                    <div class="service-icon">🔎</div>
+
+                    <h3>Google Ads</h3>
+
+                    <p>
+                        Reach people actively searching for your
+                        products or services with conversion-focused
+                        Google advertising.
+                    </p>
+
+                </div>
+
+
+                <div class="service">
+
+                    <div class="service-icon">🌐</div>
+
+                    <h3>Website Development</h3>
+
+                    <p>
+                        Fast, responsive and conversion-focused
+                        websites built to turn visitors into
+                        genuine enquiries.
+                    </p>
+
+                </div>
+
+
+                <div class="service">
+
+                    <div class="service-icon">📱</div>
+
+                    <h3>Social Media</h3>
+
+                    <p>
+                        Build your brand presence with strategic
+                        content, creative designs and consistent
+                        social media management.
+                    </p>
+
+                </div>
+
             </div>
-        </section>
 
-        <!-- AUDIENCE -->
-        <section>
-            <div class="container">
-                <div class="section-head">
-                    <div class="eyebrow">Who Should Attend?</div>
-                    <h2>Is This For You?</h2>
+        </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+
+    <section class="why">
+
+        <div class="container">
+
+            <div class="why-grid">
+
+                <div>
+
+                    <span style="
+                        color:#8f7cff;
+                        font-size:12px;
+                        font-weight:800;
+                        letter-spacing:2px;
+                    ">
+                        WHY WORK WITH US
+                    </span>
+
+                    <h2>
+                        Marketing That
+                        Focuses On
+                        <span class="gradient-text">Growth.</span>
+                    </h2>
+
+                    <p>
+                        We combine advertising, creative strategy,
+                        landing pages and optimization to create
+                        a complete digital growth system.
+                    </p>
+
+                    <div class="features">
+
+                        <div class="feature">
+
+                            <div class="check">✓</div>
+
+                            <div>
+                                <strong>Targeted Advertising</strong>
+                                <small>Reach the right audience.</small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature">
+
+                            <div class="check">✓</div>
+
+                            <div>
+                                <strong>Conversion-Focused Funnels</strong>
+                                <small>Turn clicks into enquiries.</small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature">
+
+                            <div class="check">✓</div>
+
+                            <div>
+                                <strong>Continuous Optimization</strong>
+                                <small>Improve campaigns with data.</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="audience-grid">
-                    <div class="card">
-                        <div class="card-icon">✓</div>
-                        <h3>Beginners</h3>
-                        <p>Want to learn market basics.</p>
+
+                <div class="hero-visual">
+
+                    <div class="dashboard">
+
+                        <div class="dashboard-title">
+                            Lead Generation System
+                        </div>
+
+                        <div style="
+                            margin-top:20px;
+                            padding:22px;
+                            border-radius:18px;
+                            background:rgba(124,92,255,.1);
+                        ">
+
+                            <small style="color:#9299ae;">
+                                Monthly Leads
+                            </small>
+
+                            <h3 style="font-size:45px;margin:8px 0;">
+                                +38.6%
+                            </h3>
+
+                            <div style="
+                                height:8px;
+                                border-radius:20px;
+                                background:linear-gradient(
+                                    90deg,
+                                    #7c5cff 80%,
+                                    rgba(255,255,255,.08) 80%
+                                );
+                            "></div>
+
+                        </div>
+
+                        <div class="mini-cards">
+
+                            <div class="mini">
+                                <span>Meta Ads</span>
+                                <strong>Active</strong>
+                            </div>
+
+                            <div class="mini">
+                                <span>Google Ads</span>
+                                <strong>Active</strong>
+                            </div>
+
+                        </div>
+
                     </div>
-                    <div class="card">
-                        <div class="card-icon">✓</div>
-                        <h3>Market Learners</h3>
-                        <p>Need a clearer market process.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">✓</div>
-                        <h3>Active Market Participants</h3>
-                        <p>Want to avoid random positions.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">✓</div>
-                        <h3>Framework Seekers</h3>
-                        <p>Want a simple structured approach.</p>
-                    </div>
+
                 </div>
+
             </div>
-        </section>
 
-        <!-- TESTIMONIALS -->
-        <section>
-            <div class="container">
-                <div class="section-head">
-                    <div class="eyebrow">Community Feedback</div>
-                    <h2>What market participants Want From a Better market participation Process.</h2>
-                </div>
+        </div>
 
-                <div class="problem-grid">
-                    <div class="card">
-                        <p style="font-size:16px;color:#e9edf3">“I was taking positions without a proper plan. The
-                            biggest thing I want from this masterclass is a clearer process for deciding when to enter
-                            and when to stay out.”</p>
-                        <p style="margin-top:15px"></p>
-                    </div>
-                    <div class="card">
-                        <p style="font-size:16px;color:#e9edf3">“The part I'm most interested in is seeing the setup
-                            explained on live charts instead of just being given a signal.”</p>
-                        <p style="margin-top:15px"></p>
-                    </div>
-                    <div class="card">
-                        <p style="font-size:16px;color:#e9edf3">“I want to improve my risk management and stop making
-                            emotional decisions after a losing positions. A structured approach is exactly what I'm
-                            looking for.”</p>
-                        <p style="margin-top:15px"></p>
-                    </div>
-                </div>
-                <p style="text-align:center;color:#687384;font-size:11px;margin-top:18px"></p>
-            </div>
-        </section>
+    </section>
 
-        <!-- FINAL CTA -->
-        <section class="cta-section">
-            <div class="container cta-box">
-                <div class="eyebrow">Your Seat Is Free</div>
-                <h2>Ready to learn market participation with a structured approach?</h2>
+
+    <!-- CTA -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <h2>
+                    Ready To Grow
+                    <span class="gradient-text">Your Business?</span>
+                </h2>
+
                 <p>
-                    Join Rishabh Dwivedi's FREE live market masterclass.
-                    Enter your details and we'll take you directly to WhatsApp for the joining information.
+                    Join our Telegram community to get digital marketing
+                    strategies, advertising insights, growth tips and
+                    updates.
                 </p>
 
-                <div class="meta" style="justify-content:center">
-                    <span class="pill">📅 SUNDAY</span>
-                    <span class="pill">⏰ 12:00 PM</span>
-                    <span class="pill">🎟️ FREE</span>
-                </div>
-
-                <a class="primary" href="https://chat.whatsapp.com/HldcRtWfVVI1err1sb8XIm">GET FREE ACCESS →</a>
+                <a href="https://t.me/+NHNQiIrUj6Y1NWE1"
+                   class="primary-btn"
+                   style="display:inline-block;">
+                    🚀 Join Telegram Now
+                </a>
 
             </div>
-        </section>
-    </main>
 
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Grow360°. All Rights Reserved.
+
+    </footer>
+
+
+    <!-- FLOATING TELEGRAM -->
+
+    <a href="https://t.me/+NHNQiIrUj6Y1NWE1"
+       class="telegram-float"
+       aria-label="Join Telegram">
+        ➤
+    </a>
 
 
 </body>
-
 </html>
